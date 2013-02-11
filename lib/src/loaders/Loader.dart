@@ -144,7 +144,7 @@ class Loader {
   _create_texture( texturePath, sourceFile, repeat, offset, wrap, anisotropy ) {
 
     var isCompressed = sourceFile.toLowerCase().endsWith( ".dds" );
-    var fullPath = texturePath + "/" + sourceFile;
+    var fullPath = "$texturePath/$sourceFile";
     var result;
     var texture;
 
