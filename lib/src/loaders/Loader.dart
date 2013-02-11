@@ -128,7 +128,7 @@ class Loader {
 
       } else {
 
-        where.image = this;
+        where.image = image;
 
       }
 
