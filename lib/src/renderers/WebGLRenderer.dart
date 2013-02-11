@@ -952,7 +952,7 @@ class WebGLRenderer implements Renderer {
 
 		if ( (material.vertexColors != null) &&  (material.vertexColors != NoColors) ) {
 
-			return material.vertexColors;
+			return (material.vertexColors != 0);
 
 		}
 
@@ -4416,7 +4416,7 @@ class WebGLRenderer implements Renderer {
 			webglobject.__webglActive = false;
 		}
 
-		if (!webglobject.__webglActive) {
+		if (webglobject.__webglActive == null || !webglobject.__webglActive) {
 
 			if ( object is Mesh ) {
 
