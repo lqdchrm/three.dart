@@ -210,7 +210,7 @@ class Loader {
   _rgb2hex( rgb ) =>
       ( (rgb[ 0 ] * 255).toInt() << 16 ) +
       ( (rgb[ 1 ] * 255).toInt() << 8 ) +
-      rgb[ 2 ].toInt() * 255;
+      (  rgb[ 2 ] * 255).toInt();
 
 
   _createMaterial( Map m, String texturePath ) {
